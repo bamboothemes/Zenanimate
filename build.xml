@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<project default="build" name="Plg - JBType">
+	<property file="build.properties" override="false" />
+	<property file="${dir.build}/common.properties" override="false" />
+	<xmlproperty file="${dir.local}/${jb.name}.xml" keepRoot="false" prefix="jb." />
+
+	<target name="build">
+		<phing inheritAll="true" inheritRefs="true" phingfile="${dir.build}/build.xml" target="build_all_bundles" />
+		<phing inheritAll="true" inheritRefs="true" phingfile="${dir.build}/build.xml" target="build" />
+	</target>
+
+</project>

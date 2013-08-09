@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension group="system" method="upgrade" type="plugin" version="1.5">
+	<name>System - Zen Animate</name>
+	<creationDate>Feb 2010</creationDate>
+	<version>1.0</version>
+	<author>Joomla Bamboo</author>
+	<copyright>Copyright 2009 - joomlabamboo.com</copyright>
+	<license>http://www.gnu.org/copyleft/lgpl.html</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com.com</authorUrl>
+	<description><![CDATA[
+		<p style="line-height:180%;font-size:1.2em">
+			Zenanimate makes it easy for you to add css3 animated effects to your text. Simply wrap your text in your desired tags e.g. {fadeUp}This will fade up{/fadeUp} and the plugin will do the rest for you. Please note that these effects will only work in browsers that support css3 animations.</p>]]></description>
+	<files>
+		<filename plugin="zenanimate">zenanimate.php</filename>
+		<filename plugin="zenanimate">index.html</filename>
+	</files>
+	<media destination="zenanimate" folder="media/zenanimate">
+		<folder>css</folder>
+		<file>index.html</file>
+	</media>
+	<config>
+		<fields addfieldpath="" name="params">
+			<fieldset group="zenshortcodes" label="JB Type Options" name="zenshortcodes">
+				<field default="coquette" description="Select from the available styles." label="Select the style of icons" name="iconStyle" type="list">
+					<option value="coquette">Coquette - dryicons.com</option>
+					<option value="orangesticker">Orange Sticker Icons</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
